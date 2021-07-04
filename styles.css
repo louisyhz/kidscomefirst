@@ -1,0 +1,669 @@
+/* Colors: 
+
+
+Fonts: 
+        font-family: 'Rubik', Helvetica, Arial, sans-serif;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+Shadows: 
+    Text:
+        text-shadow: 2px 2px 3px #00000025;
+    Photo:
+        filter: drop-shadow(0px 3px 4px #00000040);
+
+*/
+
+/********************************************************
+                    MOBILE PORTRAIT
+********************************************************/
+
+/*                     GENERAL                         */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2.125rem;
+    line-height: 2.5rem;
+
+    color: #017DC3;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #00000025;
+}
+
+h4 {
+    /* font-size: 1.2rem; */
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding: 1rem 0;
+}
+
+article {
+}
+
+/* HEADER  */
+/* Accessibility  */
+.accessibility {
+    background: white;
+}
+
+.accessibility .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1.2rem;
+    height: 4rem;
+}
+
+.accessibility .accessibility-elem{
+    padding: 0;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;  
+    margin: 0 0.5rem;
+}
+
+/* Navigation  */
+.main-menu {
+    background: #017DC3;
+}
+
+.main-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+    height: 5.5rem;
+}
+
+.main-menu .logo {
+    width: 7rem;
+}
+
+.main-menu .actions .action {
+    padding: 0;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.main-menu .actions .action.hamburger {
+    width: 2rem;
+}
+
+.main-menu .actions .action.hamburger:focus {
+    outline: none;
+    border: none;
+}
+
+.main-menu .actions .action:not(:last-child) {
+    margin-right: 0.8rem;
+}
+
+.main-menu-desktop {
+    display: none;
+}
+
+.main-menu-mobile {
+    display: flex;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    background: #2EB2FD;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-menu-mobile.open {
+    opacity: 1;
+    max-height: 100%;
+    visibility: visible;
+    padding: 0 1.2rem 1.2rem;
+}
+
+.main-menu-mobile .main-menu-link {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-menu-mobile li{
+    line-height: 1rem;
+}
+
+.main-menu-mobile li:not(:last-child) {
+    margin: 1rem;
+}
+
+/* Body  */
+.container {
+    /* padding: 2.5rem; */
+    padding: 4rem 3rem;
+}
+
+/* Aside  */
+aside .aside-numbers {
+    background-color: #FFC100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+}
+.aside-numbers img {
+    margin: 4rem 0.5rem;
+
+}
+
+.aside-numbers p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.75rem;
+    margin: 0.5rem 0.5rem;
+    padding: 1.5rem 2rem;
+    color: #676868;
+    text-shadow: 2px 2px 0px #00000015;
+}
+
+.aside-numbers p span {
+    font-weight: bold;
+    font-size: 2.125rem;
+}
+
+/* Footer  */
+footer {
+    
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #017DC3;
+
+}
+
+footer img {
+    width: 12.8rem;
+    height: 4rem;
+    margin: 4rem;
+}
+
+footer .main-menu-mobile-footer {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+footer .main-menu-mobile-footer ul a {
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+footer .main-menu-mobile-footer  ul .footer-menu-separator {
+    width: 13.75rem;
+    border: 1px solid #FFC100;
+    margin: 1rem;
+}
+
+footer .twitter-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    text-decoration: none;
+}
+
+
+footer  .twitter-tag p {
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+footer .twitter-tag i {
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+footer .copyright {
+    background-color: #FFFFFF;
+    margin: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+
+
+/*                    HOME PAGE                        */
+ /* ---------- DESCRIPTION SECTION ---------- */
+.main-description {
+    /* margin: 1.2rem 1.2rem 1.5rem; */
+    background-image: url('../img/photo-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 45rem;
+    text-align: center;
+    padding: 3.5rem 0rem;
+    
+}
+
+.main-description .description-text {
+    margin: 28rem 0 4rem 0;
+    border: 1px solid #0000002b;
+    padding: 2rem 3rem;
+    background-color: #10101060;
+    color: white;
+    
+}
+
+.main-description .description-title {
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 40px;
+}
+
+.main-description .description-tagline{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    line-height: 27px;
+}
+
+.main-description .description-about-us-link { 
+    background: #FCFAFA;
+    color: #017DC3;
+    text-decoration: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    border: 1px solid #000000;
+    font-size: 1.125rem;
+    padding: 0.5rem 4rem;
+    text-transform: uppercase;
+    line-height: 33px;
+    border-radius: 10px;
+}
+
+ /* ---------- WELCOME TO KCF SECTION ---------- */
+.main-welcome-kcf {
+    padding: 4rem 1.2rem;
+}
+
+.main-welcome-content {
+}
+
+.main-welcome-content h3 {
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    font-size: 1.8rem; 
+    line-height: 2rem;    
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.387rem;
+    color: #017DC3;
+    text-shadow: 2px 2px 3px #00000025;
+
+}
+
+.main-welcome-content p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
+
+.main-welcome-content span {
+    color: #000000;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    text-align: right;
+    text-shadow: none;
+}
+
+.main-welcome-img-container{
+    background-color: #017DC3;
+}
+
+.main-welcome-img {
+    text-align: right;
+    padding: 3rem 0 4rem 3rem; 
+    filter: drop-shadow(6px 6px 0px #00000040);
+}
+
+ /* ---------- PRIORITIES SECTION ---------- */
+
+
+.main-priorities {
+}
+
+.main-priorities .main-priorities-title {
+    color: #017DC3;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    margin-top: 1.8rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #00000025;
+}
+
+.main-priorities-group-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-priorities .priority {
+    background: #017DC3;
+    text-align: center;
+    padding: 2.75rem;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.main-priorities .priority h4 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 3px #00000025;
+
+}
+
+.main-priorities .priority p {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main-priorities .priority-even {
+    background: #FFC100;
+    text-align: center;
+    padding: 2.75rem;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.main-priorities .priority-even h4 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #282828;
+    text-shadow: 2px 2px 3px #00000025;
+}
+
+.main-priorities .priority-even p {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    color: #282828;
+}
+
+.main-priorities .priority-img {
+    filter: drop-shadow(0px 3px 4px #00000040);
+}
+
+
+
+ /* ---------- NEWS SECTION ---------- */
+.main-news {
+    background-color: #E7E7E7;
+}
+
+.main-news .container {
+}
+
+.main-piece-of-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.main-news-title {
+    color: #017DC3;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #00000025;
+}
+
+.main-news h4 {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1.8rem; 
+    line-height: 2rem;    
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.main-news p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.main-news img {
+    margin: 1rem 0;
+    filter: drop-shadow(6px 6px 0px #00000040);
+}
+
+.main-news-link {
+    background: #FFC100;
+    color: black;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 6rem;
+    text-transform: uppercase;
+}
+
+ /* ---------- PARTNER NEWS SECTION ---------- */
+ .main-partner-news {
+    background-color: #017DC3;
+}
+
+.main-partner-news .container {
+}
+
+.main-piece-of-partner-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.main-partner-news-title {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #00000025;
+}
+
+.main-partner-news h4 {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.main-partner-news p {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+
+}
+
+.main-partner-news img {
+    margin: 1rem 0;
+    filter: drop-shadow(6px 6px 0px #00000040);
+}
+
+.main-partner-news-link {
+    background: #FFC100;
+    color: black;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 6rem;
+    text-transform: uppercase;
+}
+
+
+ /* ------------ BLOCKQUOTE ------------ */
+.main-blockquote-section{
+    background-color: #017DC3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-blockquote-section img {
+    filter: drop-shadow(6px 6px 0px #00000040);
+}
+
+.main-blockquote-section blockquote {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding: 4rem 4rem 0 4rem;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+}
+
+.main-blockquote-section blockquote p {
+    padding: 0 4rem 4rem 0;
+    margin-bottom: 0rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+ /* -------------- FORM -------------- */
+
+
+/*                    NEWS PAGE                        */
+                    /* Code here  */
+
+
+/*                   ABOUT US PAGE                     */
+                    /* Code here  */
+
+
+/*                  CONTACT US PAGE                    */
+                    /* Code here  */
+
+
+/********************************************************
+                    Landscape phone and up
+********************************************************/
+
+@media only screen and (min-width: 480px) {
+
+}
+
+/********************************************************
+                    Portrait tablet and up
+********************************************************/
+@media only screen and (min-width: 768px) {
+
+
+    /* Footer  */
+    footer  .twitter-tag p {
+        display: inline-block;
+    }
+    
+    .main-menu .actions #main-hamburger,
+    .main-menu-mobile {
+        display: none;
+    }
+
+    .main-menu-desktop {
+        display: block;
+    }
+}
+
+/********************************************************
+                    Standart desktop (17'') and up
+********************************************************/
+@media only screen and (min-width: 960px) { 
+
+    .container {
+        max-width: 64rem;
+        margin: 0 auto;
+    }
+
+}
+
+/********************************************************
+                Widescreen desktop (24'') and up
+********************************************************/
+@media only screen and (min-width: 1160px) {
+
+}
