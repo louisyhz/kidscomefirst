@@ -79,6 +79,7 @@ p {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     
     font-size: 1rem;
+    font-weight: 100;
     line-height: 1.25rem;
     /* padding: 0.9rem 3.125rem 1rem 2.8rem; */
 
@@ -620,14 +621,26 @@ footer .copyright {
 
 .about-us-desc-link {
     background: #FFC100;
-    color: black;
+    color: #017DC3;
     font-family: 'Rubik', Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    text-transform: capitalize;
+    text-align: center;
+    /* line-height: 1.6rem; */
+    padding: 2rem 2rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.about-us-desc-link-even {
+    background: #017DC3;
+    color: #FFFFFF;
+    font-family: 'Rubik', Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
     text-transform: capitalize;
     text-align: center;
 
-    padding: 2rem 6rem;
-    margin: 2.5rem 0 2.5rem 0;
+    padding: 2rem 2rem;
+    margin: 1.5rem 0 1.5rem 0;
 }
 
 .about-us-vision .vision-elem {
@@ -713,9 +726,11 @@ footer .copyright {
     text-transform: capitalize;
     text-align: center;
 
-    padding: 2rem 6rem;
+    padding: 2rem 2rem;
     margin: 2.5rem 0 2.5rem 0;
 }
+
+
 /*                  CONTACT US PAGE                    */
                     /* Code here  */
 
