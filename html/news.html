@@ -14,8 +14,9 @@
 
     <!-- Links to Remote Fonts  -->
     <!-- Paste here  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -43,6 +44,9 @@
     
         <section class="main-menu">
             <section class="container">
+                <a class="logo-link" href="../index.html">
+                    <img class="logo" src="../img/logo.jpg" alt="Logo">
+                </a>
                 <nav class="main-menu-desktop">
                     <ul>
                         <li>
@@ -52,17 +56,16 @@
                             <a href="about-us.html">About Us</a>
                         </li>
                         <li>
-                            <a href="contact-us.html">Contact Us</a>
+                            <a href="contact-us.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
-                <a class="logo-link" href="../index.html">
-                    <img class="logo" src="../img/logo.jpg" alt="Logo">
-                </a>
+                
                 <section class="actions">
-                    <button class="action"><i class="fas fa-2x fa-user-friends"></i></button>
-                    <button class="action"> <i class="fas fa-2x fa-language"></i> </button>
-                    <button class="action hamburger" id="main-hamburger"><i class="fas fa-2x fa-bars"></i></button>
+                    <button class="action"><i class="fas fa-2x fa-search"></i></button>
+                    <button class="action" id="login-desktop">Partner Login</button>
+                    <button class="action" id="login-mobile"><i class="fas fa-2x fa-user-friends"></i></button>
+                    <button class="action" id="main-hamburger"><i class="fas fa-2x fa-bars"></i></button>
                 </section>
             </section>
         </section>
@@ -75,7 +78,7 @@
                     <a class="main-menu-link" href="about-us.html">About Us</a>
                 </li>
                 <li>
-                    <a class="main-menu-link" href="contact-us.html">Contact Us</a>
+                    <a class="main-menu-link" href="contact-us.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -97,7 +100,7 @@
                 <!-- code here  -->
                 <section class="news-categories">
                     <h2 class="news-categories-title">Categories</h2>
-                    <section class="container">
+                    <!-- <section class="container"> -->
                         <section class="news-categories-block">
                             <section class="category">
                                 <button><i class="fas fa-3x fa-user-friends"></i></button>
@@ -116,7 +119,7 @@
                                 <p>Events</p>
                             </section>
                         </section>
-                    </section>
+                    <!-- </section> -->
                 </section>
 
                 <h2>News</h2>
@@ -128,7 +131,7 @@
                             <p>Date: May 21, 2021</p>
                             <p>Author: CHEO</p>
                         </section>
-                        <img src="../img/photo-1.jpg" alt="">
+                        <img src="../img/photo-2.jpg" alt="">
                     </section>
                 </section>
 
@@ -148,11 +151,10 @@
     <!-- aside  -->
     <aside>
         <section class="aside-numbers">
-            <p>We are <span>61</span> Organizations</p>
-            <p><span>1089</span> Physicians</p>
-            <p><span>2535</span> Individuals commited to Youth Health</p>
+            <p>We are <span>60+</span> Organizations</p>
+            <p><span>1000+</span> Physicians</p>
+            <p>Committed <span>Family</span> and <span>Youth</span> Partners</p>
         </section>
-        
     </aside>
     <!-- END of aside  -->
 
@@ -161,7 +163,7 @@
     <footer>
         <section class="footer-container">
             <img src="../img/logo.jpg" alt="logo">
-            <nav class="main-menu-mobile-footer">
+            <nav class="main-menu-footer">
                 <ul>
                     <li>
                         <a href="#">Priorities</a>
