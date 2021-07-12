@@ -43,8 +43,6 @@ h1 {
     text-align: center;
     color: #FFFFFF;
     text-transform: capitalize;
-
-    /* padding: 1.5rem 0; */
 }
 
 h2 {
@@ -67,8 +65,6 @@ h3 {
     line-height: 2rem;
     text-transform: capitalize;
     font-weight: 800;
-    
-    padding: 1rem 0;
 }
 
 h4 {
@@ -79,11 +75,10 @@ p {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     
     font-size: 1rem;
-    font-weight: 100;
-    line-height: 1.25rem;
-    /* padding: 0.9rem 3.125rem 1rem 2.8rem; */
+    font-weight: 300;
+    line-height: 1.4rem;
 
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
 
     color: #000000;
 }
@@ -92,9 +87,13 @@ article {
 }
 
 /* HEADER  */
-/* Accessibility  */
+/* Accessibility */
 .accessibility {
     background: white;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .accessibility .container {
@@ -109,7 +108,7 @@ article {
     padding: 0;
     background: none;
     border: none;
-    color: black;
+    color: #017DC3;
     cursor: pointer;  
     margin: 0 0.5rem;
 }
@@ -118,6 +117,10 @@ article {
 .main-menu {
     background: #017DC3;
     filter: drop-shadow(2px 3px 4px rgba(20, 20, 20, 0.25));
+    position: fixed;
+    width: 100%;
+    top: 4rem;
+    z-index: 1;
 }
 
 .main-menu .container {
@@ -140,21 +143,16 @@ article {
     cursor: pointer;
 }
 
-.main-menu .actions .action.hamburger {
-    width: 2rem;
+.main-menu-desktop {
+    display: none;
 }
 
-.main-menu .actions .action.hamburger:focus {
-    outline: none;
-    border: none;
+.main-menu .actions #login-desktop {
+    display: none;
 }
 
 .main-menu .actions .action:not(:last-child) {
     margin-right: 0.8rem;
-}
-
-.main-menu-desktop {
-    display: none;
 }
 
 .main-menu-mobile {
@@ -173,7 +171,9 @@ article {
     opacity: 1;
     max-height: 100%;
     visibility: visible;
-    padding: 0 1.2rem 1.2rem;
+    padding: 10rem 1.2rem 1.2rem;
+    /* padding: 0rem 1.2rem 1.2rem; */
+    /* padding-top: 10rem; */
 }
 
 .main-menu-mobile .main-menu-link {
@@ -193,7 +193,6 @@ article {
 
 /* Body  */
 .container {
-    /* padding: 2.5rem; */
     padding: 1.2rem 3rem 1.2rem 3rem;
 }
 
@@ -203,12 +202,11 @@ aside .aside-numbers {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 2rem;
-    
 }
 .aside-numbers img {
     margin: 4rem 0.5rem;
-
 }
 
 .aside-numbers p {
@@ -236,28 +234,28 @@ footer .footer-container {
     flex-direction: column;
     align-items: center;
     background-color: #017DC3;
-
+    padding: 4rem;
 }
 
 footer img {
     width: 12.8rem;
     height: 4rem;
-    margin: 4rem;
+    margin-bottom: 2.5rem;
 }
 
-footer .main-menu-mobile-footer {
+footer .main-menu-footer {
     font-size: 1.75rem;
     text-align: center;
-    margin-bottom: 3.125rem;
+    margin-bottom: 1.125rem;
 }
 
-footer .main-menu-mobile-footer ul a {
+footer .main-menu-footer ul a {
     color: #FFFFFF;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     text-decoration: none;
 }
 
-footer .main-menu-mobile-footer  ul .footer-menu-separator {
+footer .main-menu-footer  ul .footer-menu-separator {
     width: 13.75rem;
     border: 1px solid #FFC100;
     margin: 2rem;
@@ -269,6 +267,8 @@ footer .twitter-tag {
     align-items: center;
     margin-bottom: 4rem;
     text-decoration: none;
+
+    display: none;
 }
 
 
@@ -295,7 +295,6 @@ footer .copyright {
 }
 
 
-
 /*                    HOME PAGE                        */
  /* ---------- DESCRIPTION SECTION ---------- */
 .main-description {
@@ -303,7 +302,7 @@ footer .copyright {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 45rem;
+    height: auto;
     text-align: center;
     padding: 3.5rem 0rem;
     
@@ -347,11 +346,17 @@ footer .copyright {
 
  /* ---------- WELCOME TO KCF SECTION ---------- */
 .main-welcome-kcf {
-    padding: 4rem 1.2rem;
 }
 
-.main-welcome-content {
+.main-welcome-content h2:first-of-type {
+    padding-bottom: 0;
+    text-align: right;
 }
+.main-welcome-content h2:last-of-type {
+    padding-top: 0;
+    text-align: right;
+}
+
 
 .main-welcome-content h2 {
     font-family: 'Rubik', Helvetica, Arial, sans-serif;
@@ -365,8 +370,7 @@ footer .copyright {
     line-height: 2.387rem;
     color: #017DC3;
     text-shadow: 2px 2px 3px #00000025;
-    margin: 0.2rem;
-
+    text-align: right;
 }
 
 .main-welcome-content p {
@@ -388,40 +392,39 @@ footer .copyright {
 
 .main-welcome-img-container{
     background-color: #017DC3;
+    padding: 3rem 0 3rem 3rem; 
 }
 
 .main-welcome-img {
     text-align: right;
-    padding: 3rem 0 4rem 3rem; 
+    margin: 3rem 0 3rem 3rem;;
 }
 
  /* ---------- PRIORITIES SECTION ---------- */
-
-
 .main-priorities {
 }
 
 .main-priorities-group-container {
     display: flex; 
     flex-direction: column;
-    align-items: center;
 }
 
 .main-priorities .priority {
     background: #017DC3;
     text-align: center;
-    padding: 2.75rem;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .main-priorities .priority h3 {
     font-weight: bold;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 2.375rem;
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
     text-shadow: 2px 2px 3px #00000025;
+
+    padding-top: 0.5rem
 }
 
 .main-priorities .priority p {
@@ -430,23 +433,25 @@ footer .copyright {
     line-height: 1.375rem;
     text-align: center;
     color: #FFFFFF;
+    padding-bottom: 2rem;
 }
 
 .main-priorities .priority-even {
     background: #FFC100;
     text-align: center;
-    padding: 2.75rem;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .main-priorities .priority-even h3 {
     font-weight: bold;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 2.375rem;
     text-align: center;
     text-transform: capitalize;
     color: #282828;
     text-shadow: 2px 2px 3px #00000025;
+
+    padding-top: 0.5rem;
 }
 
 .main-priorities .priority-even p {
@@ -455,19 +460,13 @@ footer .copyright {
     line-height: 1.375rem;
     text-align: center;
     color: #282828;
+    padding-bottom: 2rem;
+
 }
-
-.main-priorities .priority-img {
-}
-
-
 
  /* ---------- NEWS SECTION ---------- */
 .main-news {
     background-color: #E7E7E7;
-}
-
-.main-news .container {
 }
 
 .main-piece-of-news {
@@ -475,13 +474,6 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.2rem;
-}
-
-.main-news p {
-    /* font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-    line-height: 1.4rem; */
 }
 
 .main-news img {
@@ -499,7 +491,7 @@ footer .copyright {
     margin: 2.75rem 0 2.75rem 0;
 }
 
- /* ------------ BLOCKQUOTE ------------ */
+ /* ------------ BLOCKQUOTE SECTION ------------ */
 .main-blockquote-section{
     background-color: #017DC3;
 
@@ -515,10 +507,12 @@ footer .copyright {
 .main-blockquote-section blockquote {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     padding: 4rem 4rem 0 4rem;
-    font-style: italic;
     font-size: 1.25rem;
     line-height: 1.5rem;
     color: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .main-blockquote-section blockquote p {
@@ -526,13 +520,25 @@ footer .copyright {
     margin-bottom: 0rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    margin-top: 1.5rem;
 }
 
+ blockquote i {
+    color: #FFFFFF20;
+    content: "\f10d"; 
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    font-size: 180px;
+ }
+
  /* -------------- FORM -------------- */
+                /* Code here  */
 
 
 /*                    NEWS PAGE                        */
-                    /* Code here  */
+                /* Code here  */
 .news-heading {
     background-image: url('../img/photo-1.jpg');
     background-repeat: no-repeat;
@@ -543,19 +549,21 @@ footer .copyright {
     padding: 28rem 0 5rem 0;
 }
 
-.news-categories-title {
-    display: none;
+/* ---------- CATEGORIES SECTION ---------- */
+.news-categories {
+    background-color: #017DC3;
+    width: 100%;
 }
 
-.news-categories .container {
-    background-color: #017DC3;
+.news-categories-title {
+    display: none;
 }
 
 .news-categories-block {
     display: flex;
     flex-direction: column;
 
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .news-categories-block .category {
@@ -575,6 +583,7 @@ footer .copyright {
     color: #FFFFFF;
 }
 
+/* ---------- NEWS SECTION ---------- */
 .news-piece-of-news {
     background-color: #E7E7E7;
     padding: 1.5rem 0rem;
@@ -605,18 +614,22 @@ footer .copyright {
     margin: 1.5rem 0 1.5rem 0;
 }
 
+
 /*                   ABOUT US PAGE                     */
                     /* Code here  */
-
+/* ---------- DESCRIPTION SECTION ---------- */
 .about-us-description {
     display: flex;
     flex-direction: column;
-
 }
 
 .about-us-description h3 {
     color: #017DC3;
+}
 
+.about-us-description-buttons {
+    display: flex;
+    flex-direction: column;
 }
 
 .about-us-desc-link {
@@ -626,7 +639,7 @@ footer .copyright {
     font-size: 1.125rem;
     text-transform: capitalize;
     text-align: center;
-    /* line-height: 1.6rem; */
+    line-height: 1.5rem;
     padding: 2rem 2rem;
     margin: 1.5rem 0 1.5rem 0;
 }
@@ -638,11 +651,13 @@ footer .copyright {
     font-size: 1.125rem;
     text-transform: capitalize;
     text-align: center;
+    line-height: 1.5rem;
 
     padding: 2rem 2rem;
     margin: 1.5rem 0 1.5rem 0;
 }
 
+/* ---------- VISION AND MISSION SECTION ---------- */
 .about-us-vision .vision-elem {
     background: #017DC3;
     text-align: center;
@@ -699,6 +714,7 @@ footer .copyright {
 }
 
 
+/* ---------- COVID SECTION ---------- */
 .about-us-covid-info {
     background-color: #D8E8F1;
     padding: 3rem 0;
@@ -732,8 +748,11 @@ footer .copyright {
 
 
 /*                  CONTACT US PAGE                    */
-                    /* Code here  */
 
+/* ---------- FORM SECTION ---------- */
+                /* Code here  */
+
+/* ---------- INFO SECTION ---------- */
 .contact-contacts-info {
     background-color: #E7E7E7;
 }
@@ -767,20 +786,237 @@ footer .copyright {
                     Portrait tablet and up
 ********************************************************/
 @media only screen and (min-width: 768px) {
+    /*                    GENERAL                        */
+    /* ---------- ASIDE SECTION ---------- */
+    aside .aside-numbers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
+    /* ---------- FOOTER SECTION ---------- */
+    footer .footer-container {
+        flex-direction: row;
+        /* justify-content: flex-end; */
+    }
 
-    /* Footer  */
+    footer .footer-container img {
+        margin-bottom: 0;
+    }
+
+    footer .main-menu-footer {
+        margin-bottom: 0;
+        flex-grow: 2;
+        margin-left: auto;
+    }
+
+    footer .main-menu-footer ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        font-size: 18px;
+    }
+
+    footer .main-menu-footer  ul .footer-menu-separator {
+        width: 0;
+        height: 1rem;
+        margin: auto 1.5rem;
+    }
+
+    footer .twitter-tag {
+        margin-bottom: 0;
+    }
+
     footer  .twitter-tag p {
         display: inline-block;
     }
     
-    .main-menu .actions #main-hamburger,
-    .main-menu-mobile {
+
+    /*                    HOME PAGE                        */
+    /* ---------- DESCRIPTION SECTION ---------- */
+    .main-welcome-kcf {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .main-welcome-kcf .container {
+        width: 50%;
+    }
+
+    .main-welcome-img-container {
+        width: 50%;
+        padding: 0; 
+    }
+    /* ---------- BLOCKQUOTE SECTION ---------- */
+    .main-blockquote-section blockquote {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+}
+
+    /* ---------- PRIORITIES SECTION ---------- */
+    .main-priorities-group-container-desktop {
         display: none;
     }
 
-    .main-menu-desktop {
+    .main-priorities-group-container {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        border-radius: 30px 0px;
+        justify-content: center;
+    }
+
+    .priority, .priority-even {
+        border-radius: 30px 0px;
+        margin: 2.5rem;
+        width: 38%;
+        height: auto;
+    }
+
+    .priority img, .priority-even img{
+        border-radius: 30px 0px;
+        background-color: #000000;
+    }
+    
+
+    /*                    ABOUT US PAGE                        */
+    /* ---------- DESCRIPTION SECTION ---------- */
+
+    .about-us-description h3 {
+        margin: 2rem 0;
+    }
+    .about-us-description-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-us-description-content p {
+        margin-right: 2.25rem;
+        /* flex-grow: 1; */
+    }
+    .about-us-description-buttons a:last-of-type {
+        margin-right: 0rem; 
+    }
+
+    .about-us-description-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about-us-description-buttons a {
+        padding: 4.5rem 2rem;
+        width: 100%;
+        margin-right: 1rem;
+        box-shadow: 0px 4px 4px #00000025;
+        border-radius: 18px;
+    }
+
+    .about-us-description-buttons a:last-of-type {
+        margin-right: 0rem;
+    }
+
+    /* ---------- VISION AND MISSION SECTION ---------- */
+    .about-us-vision-and-mission {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-us-vision {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    .about-us-vision .vision-elem {
+        width: 50%;
+    }
+    .about-us-vision img {
+        width: 50%;
+    }
+
+    .about-us-mission {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .about-us-mission .mission-elem {
+        width: 50%;
+    }
+    .about-us-mission img {
+        width: 50%;
+    }
+
+    /* ---------- PRIORITIES SECTION ---------- */
+    .about-us-priorities-group-container-mobile {
+        display: none;
+    }
+
+    .main-priorities-group-container-desktop {
         display: block;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+
+    .main-priorities-group-container-desktop .priority-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-priorities-group-container-desktop .priority, 
+    .main-priorities-group-container-desktop .priority-even {
+        width: 100%;
+        height: auto;
+        margin: 1rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .main-priorities-group-container-desktop a {
+        text-decoration: none;
+        display: flex; 
+        flex-direction: row;
+        align-items: center
+    }
+
+    #splide-priorities .splide__arrow--prev {
+        background: none;
+        display: none;
+    }
+
+    #splide-priorities .splide__arrow--next {
+        background: none;
+        display: none;
+    }
+
+    /* ---------- COVID SECTION ---------- */
+    .about-us-covid-info .container {
+        display: flex;
+        align-items: flex-start;
+    }
+    .about-us-covid-info .container a {
+        margin-top: 1rem;
+    }
+
+    /*                    NEWS PAGE                        */
+    /* ---------- CATEGORY SECTION ---------- */
+    .news-categories .news-categories-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .news-categories .news-categories-block .category {
+        width: 45%;
     }
 }
 
@@ -789,16 +1025,120 @@ footer .copyright {
 ********************************************************/
 @media only screen and (min-width: 960px) { 
 
-    .container {
-        max-width: 64rem;
-        margin: 0 auto;
-    }
-
+    
 }
 
 /********************************************************
                 Widescreen desktop (24'') and up
 ********************************************************/
 @media only screen and (min-width: 1160px) {
+    
+    /*                    GENERAL                        */
+    .container {
+        max-width: 65%;
+        margin: 0 auto;
+    }
+    
+    /* ---------- NAVIGATION ---------- */
+    .main-menu .actions #main-hamburger,
+    .main-menu .actions #login-mobile,
+    .main-menu-mobile {
+        display: none;
+    }
 
+    .main-menu .actions #login-desktop {
+        display: inline-block;
+        font-family: 'Open sans', Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+        color: #FDFAF9;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        margin-right: 0;
+    }
+
+    .main-menu-desktop {
+        display: block;
+        /* position: fixed; */
+        /* top: -2rem; */
+        /* width: 100%; */
+    }
+
+    .main-menu .main-menu-desktop {
+        flex: 1;
+    }
+
+    .main-menu .main-menu-desktop ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-menu .main-menu-desktop ul li a {
+        font-family: 'Open sans', Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+        color: #FDFAF9;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        margin: 1rem;
+    }
+
+    /*                    HOME PAGE                        */
+    /* ---------- DESCRIPTION SECTION ---------- */
+    .main-description {
+        background-position: center;
+        height: 45rem;
+        /* filter: brightness(20%); */
+    }
+
+    .description-text {
+        /* background: rgba(4, 4, 4, 0.44); */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+    }
+
+
+    /*                    ABOUT US PAGE                        */
+    /* ---------- PRIORITIES SECTION ---------- */
+    .priority, .priority-even {
+        width: 25%;
+    }
+    .main-priorities-group-container-desktop .splide__track {
+        margin: 3rem;
+    }
+
+    #splide-priorities .splide__arrow--prev {
+        display: block;
+        background: none;
+        margin-right: 5rem;
+    }
+
+    #splide-priorities .splide__arrow--next {
+        display: block;
+        background: none;
+        margin-left: 5rem;
+    }
+
+    #splide-priorities i {
+        color: #017DC3;
+    }
+
+    /*                    NEWS PAGE                        */
+    /* ---------- CATEGORY SECTION ---------- */
+    .news-categories-block {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        height: 10rem;
+    }
+
+    .news-categories .news-categories-block .category {
+        width: auto;
+        margin: 0 3rem;
+
+    }
 }
