@@ -714,6 +714,12 @@ footer .copyright {
 }
 
 
+/* ---------- PRIORITIES SECTION ---------- */
+.main-priorities-group-container-desktop {
+    display: none;
+}
+
+
 /* ---------- COVID SECTION ---------- */
 .about-us-covid-info {
     background-color: #D8E8F1;
@@ -745,7 +751,6 @@ footer .copyright {
     padding: 2rem 2rem;
     margin: 2.5rem 0 2.5rem 0;
 }
-
 
 /*                  CONTACT US PAGE                    */
 
@@ -852,18 +857,8 @@ footer .copyright {
         width: 50%;
         padding: 0; 
     }
-    /* ---------- BLOCKQUOTE SECTION ---------- */
-    .main-blockquote-section blockquote {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-}
 
     /* ---------- PRIORITIES SECTION ---------- */
-    .main-priorities-group-container-desktop {
-        display: none;
-    }
-
     .main-priorities-group-container {
         display: flex;
         flex-direction: row;
@@ -883,7 +878,13 @@ footer .copyright {
         border-radius: 30px 0px;
         background-color: #000000;
     }
-    
+
+    /* ---------- BLOCKQUOTE SECTION ---------- */
+    .main-blockquote-section blockquote {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
 
     /*                    ABOUT US PAGE                        */
     /* ---------- DESCRIPTION SECTION ---------- */
@@ -1024,16 +1025,7 @@ footer .copyright {
                     Standart desktop (17'') and up
 ********************************************************/
 @media only screen and (min-width: 960px) { 
-
-    
-}
-
-/********************************************************
-                Widescreen desktop (24'') and up
-********************************************************/
-@media only screen and (min-width: 1160px) {
-    
-    /*                    GENERAL                        */
+/*                    GENERAL                        */
     .container {
         max-width: 65%;
         margin: 0 auto;
@@ -1054,7 +1046,7 @@ footer .copyright {
         text-decoration: none;
         text-transform: uppercase;
 
-        margin-right: 0;
+        /* margin-right: 0; */
     }
 
     .main-menu-desktop {
@@ -1141,4 +1133,13 @@ footer .copyright {
         margin: 0 3rem;
 
     }
+    
+}
+
+/********************************************************
+                Widescreen desktop (24'') and up
+********************************************************/
+@media only screen and (min-width: 1160px) {
+    
+    
 }
