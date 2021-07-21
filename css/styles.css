@@ -87,6 +87,9 @@ article {
 }
 
 /* HEADER  */
+.header-container {
+    padding: 0 4rem;
+}
 /* Accessibility */
 .accessibility {
     background: white;
@@ -96,11 +99,11 @@ article {
     z-index: 1;
 }
 
-.accessibility .container {
+.accessibility .header-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 1.2rem;
+    /* padding: 0 1.2rem; */
     height: 4rem;
 }
 
@@ -123,11 +126,11 @@ article {
     z-index: 1;
 }
 
-.main-menu .container {
+.main-menu .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.2rem;
+    /* padding: 0 1.2rem; */
     height: 5.5rem;
 }
 
